@@ -1,0 +1,8 @@
+
+task :smaller_functions do
+   sh('xcrun -sdk macosx swiftc SmallFunctions.swift -gnone -O -emit-object')
+end
+
+task :large_function do
+   sh('xcrun -sdk macosx swiftc LargeFunction.swift -gnone -O -emit-object')
+end
